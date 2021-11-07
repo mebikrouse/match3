@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\FieldObject.cs" />
      <Compile Include="Assets\Scripts\FieldObjectCreator.cs" />
      <Compile Include="Assets\Scripts\FieldManager.cs" />
+     <Compile Include="Assets\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Scripts\FieldProperties.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
