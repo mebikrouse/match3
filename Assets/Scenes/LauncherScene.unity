@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 582055479}
   - component: {fileID: 582055478}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 848729043}
   - component: {fileID: 848729042}
   - component: {fileID: 848729041}
+  - component: {fileID: 848729045}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -626,6 +627,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &848729045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848729040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55dcdc0c222f44489af2d9885b2c5120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326651134
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,10 +849,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 55dcdc0c222f44489af2d9885b2c5120, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 848729045}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
