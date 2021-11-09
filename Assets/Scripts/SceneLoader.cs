@@ -8,4 +8,14 @@ public class SceneLoader: MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public static void LoadSceneAdditively(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+    }
+
+    public static void UnloadScene(string sceneName)
+    {
+        SceneManager.UnloadSceneAsync(sceneName);
+    }
 }
